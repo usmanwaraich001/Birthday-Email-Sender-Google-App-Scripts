@@ -21,25 +21,29 @@ Create a Google Sheet with the following columns:
 - Email
 - Birthday (in MM/DD/YYYY format) converted to date object in Google Sheets
 
-### Troubleshooting
-- If you encounter issues with date formats, ensure that the 'Birthday' column is set to the correct date format in Google Sheets.
-
-- Ensure that the email addresses in the 'Email' column are valid and correctly formatted.
-
-- If you have imported a excel file file into Google Sheets, there will be a `.xlsx` near the name of the sheet. Convert it to a Google Sheet by clicking on `File > Save as Google Sheets`.
+![](./assets/29.png)
 
 ### Step 3: Must do - tweaking (for proper functionality)
 - Ensure the three columns are named exactly as `Name`, `Email`, and `Birthday`.
 - Select all the data (including headers) and click on `Format > Convert To Table` or alternatively you can use the shortcut `Ctrl + Alt + Shift + t`.
+![](./assets/16.png)
+![](./assets/18.png)
 - Rename the table in the Google Sheet to `Data Table`
+![](./assets/19.png)
 - Rename the sheet to `Data Sheet`
+![](./assets/17.png)
 
 ### Step 4: Set up the Google Apps Script
 1. Open the Google Sheet you created.
 2. Click on `Extensions > Apps Script`.
+![](./assets/24.png)
+![](./assets/1.png)
+> NOTE: Extensions option will not be available if you are using a file imported from Excel, view troubleshooting section above to convert it to a Google Sheet.
 3. Delete any code in the script editor and replace it with the code from `Code.js` file in this repository.
+![](./assets/26.png)
 4. Save the script with a name like "BirthdayEmailSender".
-
+5. Ensure the app Script is saved.
+![](./assets/27.png)
 ### Step 5: Customize the email message
 1. In the Apps Script editor, locate the `sendBirthdayEmails` function.
 2. Modify the email subject and body as desired. 
@@ -51,6 +55,9 @@ Create a Google Sheet with the following columns:
 4. Make sure to replace `[Your Name]` with your actual name or the name you want to appear in the email.
 ### Step 6: Set up the trigger
 1. In the Apps Script editor, click on the clock icon (Triggers) in the left sidebar.
+
+![](./assets/28.png)
+
 2. Click on `+ Add Trigger` in the bottom right corner.
 3. Choose the following options:
    - Choose which function to run: `sendBirthdayEmails`
@@ -58,6 +65,8 @@ Create a Google Sheet with the following columns:
    - Select event source: `Time-driven`
    - Select type of time based trigger: `Day timer`
    - Select time of day: Choose a time that works for you
+![](./assets/11.png)
+![](./assets/12.png)
 4. Click `Save`.
 
 ### Step 7: Authorize the script
@@ -65,3 +74,23 @@ Create a Google Sheet with the following columns:
 2. Click on `Review Permissions`.
 3. Choose your Google account.
 4. Click on `Allow` to grant the necessary permissions.
+
+### Troubleshooting
+- If you encounter issues with date formats, ensure that the 'Birthday' column is set to the correct date format in Google Sheets.
+
+To Change the date format:
+1. Select the 'Birthday' column and click on the dropdown arrow next to the column letter and Select `Edit Column Type`
+![](./assets/20.png)
+2. Choose `Date`
+![](./assets/21.png)
+3. Choose `Date`
+![](./assets/22.png)
+
+
+- Ensure that the email addresses in the 'Email' column are valid and correctly formatted.
+
+- If you have imported a excel file file into Google Sheets, there will be a `.xlsx` near the name of the sheet. Convert it to a Google Sheet by clicking on `File > Save as Google Sheets`.
+1. The sheet imported from excel will have a `.xlsx` near the name of the sheet.
+![](./assets/14.png)
+2. Click on `File > Save as Google Sheets` and work with the new Google Sheet created.
+![](./assets/15.png)
