@@ -31,6 +31,7 @@ Create a Google Sheet with the following columns:
 - Rename the table in the Google Sheet to `Data Table`
 ![](./assets/19.png)
 - Rename the sheet to `Data Sheet`
+
 ![](./assets/17.png)
 
 ### Step 4: Set up the Google Apps Script
@@ -75,6 +76,8 @@ Create a Google Sheet with the following columns:
 3. Choose your Google account.
 4. Click on `Allow` to grant the necessary permissions.
 
+> NOTE: Incase of `Google has'nt Verified this app` error, refer to the troubleshooting section below.
+
 ### Troubleshooting
 - If you encounter issues with date formats, ensure that the 'Birthday' column is set to the correct date format in Google Sheets.
 
@@ -94,3 +97,9 @@ To Change the date format:
 ![](./assets/14.png)
 2. Click on `File > Save as Google Sheets` and work with the new Google Sheet created.
 ![](./assets/15.png)
+
+- Incase of `Google has'nt Verified this app` error, click on `Advanced` and then `Go to BirthdayEmailSender (unsafe)` to proceed.  
+
+![](./assets/5.png)
+![](./assets/4.png)
+
